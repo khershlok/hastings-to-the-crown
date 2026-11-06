@@ -1,0 +1,226 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>From Hastings to the Crown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,800;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: a single reading column told as chapters, each stamped with its date; a route strip of William's march; numbered source notes at the end. */
+:root{
+  --bg:#F3F4EF; --panel:#FFFFFF; --ink:#1E272B; --muted:#58625F; --rule:#D5D9CE;
+  --wool:#8E2F3A; --thread:#2E5572; --gold:#8A6714;
+  --serif:"Alegreya", Georgia, "Times New Roman", serif;
+  --sans:"Alegreya Sans", "Gill Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161B1D; --panel:#1F2629; --ink:#E7E9E2; --muted:#A9B1AD; --rule:#353E41;
+    --wool:#E28B95; --thread:#8DB7D6; --gold:#E0B85A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161B1D; --panel:#1F2629; --ink:#E7E9E2; --muted:#A9B1AD; --rule:#353E41;
+  --wool:#E28B95; --thread:#8DB7D6; --gold:#E0B85A; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.15rem;line-height:1.65;padding-inline:16px}
+.page{max-width:44rem;margin:0 auto;padding-block:2.5rem 4rem}
+a{color:var(--thread);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1,h2,h3{text-wrap:balance}
+
+header .eyebrow{font-family:var(--sans);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;color:var(--wool);margin:0}
+header h1{font-size:clamp(2.3rem,6vw,3.4rem);line-height:1.05;font-weight:800;margin:.3rem 0 .8rem}
+header p{margin:.4rem 0;color:var(--muted)}
+
+/* Route strip */
+.route{margin:2rem 0 2.5rem;padding:1.1rem 1.2rem;background:var(--panel);border:1px solid var(--rule);border-radius:6px}
+.route h2{font-family:var(--sans);font-size:.95rem;font-weight:700;margin:0 0 .8rem;color:var(--muted)}
+.route ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 0;font-family:var(--sans);font-size:.98rem}
+.route li{display:flex;align-items:center}
+.route li:not(:last-child)::after{content:"";width:1.4rem;border-top:2px dashed var(--rule);margin:0 .4rem}
+.route a{text-decoration:none;color:var(--ink);font-weight:500}
+.route a:hover{color:var(--wool)}
+.route small{color:var(--muted);margin-left:.25rem}
+
+/* Chapters */
+section.ch{padding-top:2.2rem;margin-top:2.2rem;border-top:1px solid var(--rule)}
+.date{font-family:var(--sans);font-weight:700;font-size:.9rem;color:var(--wool);letter-spacing:.04em;text-transform:uppercase;margin:0}
+section.ch h2{font-size:1.9rem;line-height:1.15;margin:.2rem 0 .9rem}
+section.ch p{margin:0 0 1rem}
+sup a{font-family:var(--sans);font-size:.75rem;font-weight:700;text-decoration:none;color:var(--thread);padding:0 .1rem}
+
+.exam{margin:1.2rem 0 .4rem;padding:.9rem 1.1rem;border:1.5px solid var(--gold);border-radius:6px;background:var(--panel)}
+.exam h3{font-family:var(--sans);font-size:.9rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin:0 0 .3rem}
+.exam p{margin:.3rem 0;font-size:1.05rem}
+
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.8rem;margin:1rem 0}
+.terms div{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.7rem .9rem}
+.terms dt{font-weight:700}
+.terms dd{margin:.2rem 0 0;font-size:1rem;color:var(--muted)}
+
+/* Sources */
+#sources ol{padding-left:1.4rem;margin:1rem 0 0}
+#sources li{margin:0 0 1.2rem;padding-left:.3rem}
+#sources li:target{background:var(--panel);outline:2px solid var(--gold);outline-offset:6px;border-radius:2px}
+.src-title{font-weight:700}
+.src-kind{display:block;font-family:var(--sans);font-size:.92rem;color:var(--muted)}
+.src-warn{display:block;font-size:1rem;color:var(--muted);margin-top:.25rem}
+.src-warn strong{color:var(--ink)}
+footer{margin-top:2.5rem;color:var(--muted);font-size:1rem}
+</style>
+
+<div class="page">
+<header>
+  <p class="eyebrow">GCSE History · Anglo-Saxon and Norman England</p>
+  <h1>From Hastings to the Crown</h1>
+  <p>Winning the Battle of Hastings did not make William king. This is the story of the ten weeks that did, told in order, with numbered references to the sources that back each part up.</p>
+  <p>Click a small number to jump to the source. Sources are listed at the end with a note on what each one tells us and how far to trust it.</p>
+</header>
+
+<nav class="route" aria-label="William's route">
+  <h2>William's route, October to December 1066</h2>
+  <ol>
+    <li><a href="#ch1">Hastings</a><small>14 Oct</small></li>
+    <li><a href="#ch2">Romney</a></li>
+    <li><a href="#ch2">Dover</a></li>
+    <li><a href="#ch2">Canterbury</a></li>
+    <li><a href="#ch3">Southwark</a><small>late Nov</small></li>
+    <li><a href="#ch4">Wallingford</a><small>early Dec</small></li>
+    <li><a href="#ch5">Berkhamsted</a></li>
+    <li><a href="#ch6">Westminster</a><small>25 Dec</small></li>
+  </ol>
+</nav>
+
+<section class="ch" id="ch1">
+  <p class="date">14 to about 19 October 1066</p>
+  <h2>Chapter 1: A victory, but no kingdom</h2>
+  <p>When the sun set on 14 October, Harold and his brothers Gyrth and Leofwine lay dead on the ridge, and the English army had fled. William had won the most important battle of his life. But he was still only a duke with a tired army in a corner of Sussex. Nobody had crowned him, and nobody had agreed to obey him.<sup><a href="#s4">4</a></sup></p>
+  <p>William pulled back to Hastings, buried his dead and waited, expecting the English leaders to come and surrender. For about five days, nobody came.<sup><a href="#s9">9</a></sup></p>
+  <p>In London, the surviving members of the Witan had made a different choice. Archbishop Ealdred of York, Earls Edwin and Morcar and the leading Londoners proclaimed the teenage <strong>Edgar Ætheling</strong> king. He was the last male member of the old royal family, but he had no army and no experience, and his supporters were not very committed to him.<sup><a href="#s3">3</a></sup><sup><a href="#s8">8</a></sup></p>
+  <div class="exam">
+    <h3>Exam link</h3>
+    <p>A common question asks why the Norman Conquest was not complete after Hastings. The answer starts here: England still had a king (Edgar), a capital (London) and powerful earls who had not fought in the battle.<sup><a href="#s4">4</a></sup></p>
+  </div>
+</section>
+
+<section class="ch" id="ch2">
+  <p class="date">Late October to November 1066</p>
+  <h2>Chapter 2: Making the coast safe</h2>
+  <p>Instead of rushing at London, William first made sure he had a safe way home to Normandy if things went wrong. He marched east along the coast.</p>
+  <p>At <strong>Romney</strong>, some Normans who had landed there by mistake had been attacked by the townspeople, so William punished the town. The message to the rest of England was clear: resistance would be paid for.<sup><a href="#s9">9</a></sup></p>
+  <p>At <strong>Dover</strong>, with its powerful fort and the shortest crossing to France, the defenders surrendered without a fight. Even so, some of William's soldiers set houses on fire. William paid for the damage and stayed about eight days, strengthening the fort and leaving his wounded there to recover. Disease, probably dysentery, broke out in his army, and some writers say William himself fell ill.<sup><a href="#s9">9</a></sup></p>
+  <p>The treatment of Romney and Dover worked. As William moved inland, the people of <strong>Canterbury</strong> came out to meet him on the road and handed over hostages and gifts before he even reached the city. He also sent soldiers west to <strong>Winchester</strong>, the old royal capital, where the king's treasury was kept.<sup><a href="#s3">3</a></sup><sup><a href="#s9">9</a></sup></p>
+  <div class="exam">
+    <h3>Exam link</h3>
+    <p>This shows William's two-sided method: harsh to places that resisted, lenient to places that gave in. Historians describe his whole campaign as a mix of military pressure and negotiated surrender rather than one big attack.<sup><a href="#s3">3</a></sup></p>
+  </div>
+</section>
+
+<section class="ch" id="ch3">
+  <p class="date">Late November 1066</p>
+  <h2>Chapter 3: Testing London</h2>
+  <p>William now reached <strong>Southwark</strong>, on the south bank of the Thames opposite London. London was big, it had strong walls, and the only way in from the south was across London Bridge.</p>
+  <p>Norman knights fought a skirmish with Londoners who came out to meet them, and drove them back inside the walls. William's men then burned Southwark. But William did not try to storm the bridge. An attack across a narrow bridge into a walled city could have cost him the army he had just won with.<sup><a href="#s3">3</a></sup><sup><a href="#s9">9</a></sup></p>
+</section>
+
+<section class="ch" id="ch4">
+  <p class="date">Late November to early December 1066</p>
+  <h2>Chapter 4: The long way round</h2>
+  <p>Instead, William marched west along the south side of the Thames, then swung north. As his army moved through Surrey, Hampshire and Berkshire, it took food and burned farms and villages. This is called <strong>harrying</strong>. It fed his army, frightened the English and cut London off from help in the countryside.<sup><a href="#s3">3</a></sup><sup><a href="#s4">4</a></sup></p>
+  <p>At <strong>Wallingford</strong>, about 45 miles upstream, there was a bridge and a ford, so the army could cross the Thames safely. Here the first great Englishman gave in: <strong>Stigand, Archbishop of Canterbury</strong>, came and submitted to William.<sup><a href="#s3">3</a></sup><sup><a href="#s4">4</a></sup></p>
+  <p>William then curved round to the north-west of London. The city was now surrounded on the land side, and every week the burning came closer.</p>
+</section>
+
+<section class="ch" id="ch5">
+  <p class="date">Early December 1066</p>
+  <h2>Chapter 5: The surrender at Berkhamsted</h2>
+  <p>At <strong>Berkhamsted</strong>, in Hertfordshire, the English leaders gave up. Edgar Ætheling, the man they had chosen as king, came out with Archbishop Ealdred, Earls Edwin and Morcar, other bishops and the leading men of London.<sup><a href="#s3">3</a></sup><sup><a href="#s4">4</a></sup></p>
+  <p>They knelt to William, swore oaths of loyalty and handed over hostages. The Anglo-Saxon Chronicle, written by English monks, comments bitterly that they should have done it sooner, before so much damage had been done.<sup><a href="#s8">8</a></sup></p>
+  <dl class="terms">
+    <div><dt>Submission</dt><dd>Accepting someone's power over you, usually by kneeling and swearing loyalty.</dd></div>
+    <div><dt>Hostage</dt><dd>A person handed over as a guarantee of good behaviour. If the oath was broken, the hostage could suffer.</dd></div>
+    <div><dt>Harrying</dt><dd>Deliberately destroying land, crops and homes to weaken and frighten an enemy.</dd></div>
+  </dl>
+  <div class="exam">
+    <h3>Exam link</h3>
+    <p>Why did the earls submit? Their king Harold was dead, their chosen king Edgar was too young and weak, London was cut off, and William was destroying the land around it. Oak National Academy's GCSE lesson on this topic links the submission directly to William's harrying.<sup><a href="#s4">4</a></sup></p>
+  </div>
+</section>
+
+<section class="ch" id="ch6">
+  <p class="date">25 December 1066</p>
+  <h2>Chapter 6: A crown on Christmas Day</h2>
+  <p>William's soldiers went ahead into London to start building a fort. Then, on <strong>Christmas Day</strong>, William was crowned in <strong>Westminster Abbey</strong>, the church Edward the Confessor had built and where Edward was buried. Being crowned over Edward's tomb sent a clear message: William was Edward's rightful heir, not just a conqueror.<sup><a href="#s1">1</a></sup><sup><a href="#s5">5</a></sup></p>
+  <p>He was crowned by <strong>Archbishop Ealdred of York</strong>, not by Stigand of Canterbury, because the Pope did not accept Stigand as a proper archbishop. The ceremony followed the traditional English service. William swore the old coronation oath of the English kings, and one account says he added a promise to rule the English as well as the best of their kings had done.<sup><a href="#s1">1</a></sup><sup><a href="#s8">8</a></sup></p>
+  <p>Then things went wrong. The congregation was asked, in English and in French, whether they accepted William as king, and they shouted their approval. Outside, the Norman guards heard the roar, thought William was being attacked, and set fire to houses around the abbey. People ran out of the church in panic. William and the clergy finished the ceremony almost alone, and one writer says William was shaking from head to foot.<sup><a href="#s1">1</a></sup><sup><a href="#s2">2</a></sup><sup><a href="#s5">5</a></sup></p>
+  <div class="exam">
+    <h3>Exam link</h3>
+    <p>The coronation is a good example of William using <strong>legitimacy</strong> as well as force: the right place, an English archbishop, the English service and the English oath. The fire shows how tense and distrustful both sides still were.</p>
+  </div>
+</section>
+
+<section class="ch" id="ch7">
+  <p class="date">January to December 1067</p>
+  <h2>Chapter 7: Making it stick</h2>
+  <p>William knew a crown was not enough. In London he began the castle that became the <strong>Tower of London</strong>. It started as a wooden fort; the great stone White Tower was built later, from about 1078, to impress and control Londoners and to guard against invaders.<sup><a href="#s5">5</a></sup><sup><a href="#s7">7</a></sup></p>
+  <p>English landowners who had fought for Harold lost their land, which William began handing to his followers. Others were allowed to keep their land if they paid him for it.<sup><a href="#s8">8</a></sup></p>
+  <p>In <strong>March 1067</strong> William felt safe enough to sail home to Normandy in triumph, taking English treasure with him. He also took the men most likely to lead a rebellion: Edgar Ætheling, Earls Edwin and Morcar and Archbishop Stigand. They were treated as honoured guests, but really they were hostages. He left his half-brother <strong>Bishop Odo</strong> and his close friend <strong>William FitzOsbern</strong> to rule England.<sup><a href="#s10">10</a></sup></p>
+  <p>Odo and FitzOsbern were accused of taking land unfairly, and anger grew. When William came back in December 1067, trouble was already brewing. Over the next few years the English rebelled again and again, leading to the revolt of Edwin and Morcar in 1068 and the Harrying of the North in 1069–70.<sup><a href="#s10">10</a></sup></p>
+</section>
+
+<section class="ch" id="ch8">
+  <p class="date">About 1071 onwards</p>
+  <h2>Epilogue: An abbey on the battlefield</h2>
+  <p>A few years later, William founded <strong>Battle Abbey</strong> on the ridge where the battle had been fought, as penance for all the blood that had been spilled. Even though the monks complained that the site was narrow and had no water, he insisted that the high altar be placed on the spot where Harold had died. A stone still marks the place today.<sup><a href="#s6">6</a></sup></p>
+  <div class="exam">
+    <h3>Summing up for an essay</h3>
+    <p>William turned one battle into a kingdom in ten weeks by combining <strong>force</strong> (punishing Romney, burning Southwark, harrying the countryside, building castles) with <strong>legitimacy</strong> (the submission at Berkhamsted, a proper coronation at Westminster) and <strong>control of potential rebels</strong> (taking the English leaders to Normandy). Hastings made the conquest possible; these ten weeks made it real.</p>
+  </div>
+</section>
+
+<section class="ch" id="sources">
+  <p class="date">Evidence</p>
+  <h2>Sources</h2>
+  <p>Numbers 8 and 9 are medieval sources written at the time. The rest are modern, reliable organisations or educational sites that are suitable for GCSE.</p>
+  <ol>
+    <li id="s1"><span class="src-title">Westminster Abbey, "William I (the Conqueror)"</span>
+      <span class="src-kind">Official website of Westminster Abbey (westminster-abbey.org)</span>
+      Confirms that after Hastings William marched to London, overcame local resistance and was crowned in the Abbey on Christmas Day 1066 using the traditional English service. It describes the Normans and English shouting their approval, the guards outside mistaking the noise for an assassination attempt and setting fire to houses, and William and the clergy completing the service despite the chaos.</li>
+    <li id="s2"><span class="src-title">English Heritage, "How William the Conqueror spent Christmas in 1066"</span>
+      <span class="src-kind">English Heritage blog, 2016 (english-heritage.org.uk)</span>
+      Explains that William chose Westminster Abbey because Edward the Confessor had founded it and his claim was based on Edward. It describes guards posted outside to stop any trouble, the bishops rushing to finish the ceremony, and William reportedly trembling from head to toe by the end.</li>
+    <li id="s3"><span class="src-title">World History Encyclopedia, "Map of William the Conqueror's Campaign for London, 1066"</span>
+      <span class="src-kind">Educational history website, by Simeon Netchev, July 2026 (worldhistory.org)</span>
+      Gives the route used in this story: through Kent, the surrender of Dover and Canterbury, testing London at Southwark, ravaging the countryside to the west, crossing at Wallingford, and the surrender at Berkhamsted in early December by Edgar, the earls, bishops and representatives of London. It sums up William's method as military pressure, controlling roads and rivers, targeted destruction and negotiated surrender, rather than a direct attack on London.</li>
+    <li id="s4"><span class="src-title">Oak National Academy, "The submission of the earls in 1066"</span>
+      <span class="src-kind">GCSE lesson, Edexcel Anglo-Saxon and Norman England (thenational.academy)</span>
+      A GCSE lesson that makes the key point that the conquest was not complete after Hastings. It explains that William used harrying and violence to make the Anglo-Saxon nobles submit, names Edwin, Morcar, Edgar and Stigand as the men who submitted, and has pupils put William's march in order: Dover, Canterbury, then on to Wallingford and Berkhamsted.</li>
+    <li id="s5"><span class="src-title">BBC History Revealed, "The coronation of William of Normandy on Christmas Day in 1066"</span>
+      <span class="src-kind">BBC history magazine, Christmas 2018 (historyrevealed.com)</span>
+      Describes the tense atmosphere at the coronation, the cheers mistaken for an attack, and spectators rushing out so that William and the clergy finished alone. It adds that William ordered a castle built in London almost at once, that the stone White Tower was begun in 1078, and that about 500 castles had been built by his death in 1087.</li>
+    <li id="s6"><span class="src-title">English Heritage, "History of Battle Abbey and Battlefield"</span>
+      <span class="src-kind">Official English Heritage site history (english-heritage.org.uk)</span>
+      States that William founded Battle Abbey on the battlefield in about 1071 as penance for the bloodshed, and that despite the narrow, waterless ridge and the first monks' objections, he insisted the high altar mark the place where Harold was killed.</li>
+    <li id="s7"><span class="src-title">Historic Royal Palaces, information about the Tower of London</span>
+      <span class="src-kind">The charity that looks after the Tower of London</span>
+      Explains that the Tower is named after its oldest building, the White Tower, which William built after invading in 1066. It was built between about 1078 and 1100 to overawe Londoners and to deter foreign invaders.</li>
+    <li id="s8"><span class="src-title">The Anglo-Saxon Chronicle, entries for 1066 and 1067</span>
+      <span class="src-kind">Medieval source, written by English monks</span>
+      Records that after Harold's death Archbishop Ealdred and the people of London wanted Edgar as king, but that William harried the land until the English leaders submitted, gave hostages and swore oaths. It says they should have done so earlier, and that Ealdred crowned William at Westminster on Christmas Day after William promised to rule as well as the best kings before him.
+      <span class="src-warn"><strong>Watch out:</strong> very brief, and written by English monks who saw the conquest as a disaster and God's punishment.</span></li>
+    <li id="s9"><span class="src-title">William of Poitiers, <em>Gesta Guillelmi</em> (The Deeds of William)</span>
+      <span class="src-kind">Medieval source, Norman, written about 1071 to 1077</span>
+      The main source for the details of the march: William waiting at Hastings, punishing Romney, the surrender of Dover and the fire there, the sickness in the army, Canterbury's surrender on the road, and the skirmish and burning at Southwark.
+      <span class="src-warn"><strong>Watch out:</strong> Poitiers was William's chaplain and wrote to praise him, so he presents William as merciful and wise and plays down the harm his army did.</span></li>
+    <li id="s10"><span class="src-title">Save My Exams, "Edwin and Morcar's Revolt, 1068"</span>
+      <span class="src-kind">GCSE revision notes, Edexcel (savemyexams.com)</span>
+      Gives the timeline after the coronation: in spring 1067 William returned to Normandy with English nobles and treasure, Odo and FitzOsbern were accused of unlawfully taking Anglo-Saxon land, Norman control was threatened by December 1067, and Edwin and Morcar rebelled in 1068.</li>
+  </ol>
+</section>
+
+<footer>Sources checked October 2026.</footer>
+</div>
+
+</body></html>
